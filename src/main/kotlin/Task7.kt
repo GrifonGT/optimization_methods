@@ -73,7 +73,7 @@ private fun findByMixed(
         val diff = abs(v - u)
         u = nextU
         v = nextV
-        println("Eps: $diff")
+        println("Diff: $diff")
     } while (diff > eps)
 
     return (u + v) / 2
@@ -104,7 +104,7 @@ private fun simpleIterationFirstWay(
         val nextX = functionFi(x)
         val diff = abs(nextX - x)
         x = nextX
-        println("Eps: $diff")
+        println("diff: $diff")
     } while (diff > eps)
 
     return x
